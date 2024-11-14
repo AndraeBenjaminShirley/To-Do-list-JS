@@ -1,0 +1,107 @@
+/* Basic Styling */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+/* Task List Styling */
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+/* Task Item Styling */
+.task {
+    font-size: 18px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Completed Task Styling */
+.completed {
+    text-decoration: line-through;
+    color: grey;
+} 
+
+/* Button Hover*/
+button:hover {
+    background-color: #e2e2e2;
+}
+
+/** Toggle Highlights*/
+.highlighted {
+    background-color: yellow; /* or any other color you'd like */
+}
+
+/* Task Item Styling *
+.task {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Completed Task Styling *
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Style for each task item *
+.task {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for a completed task *
+.completed {
+    text-decoration: line-through;
+    color: grey;
+    background-color: #f0f0f0;
+}
+
+/* Hover effect for each task *
+.task:hover {
+    background-color: #f9f9f9;
+}
+
+/* Highlighted task style (from JavaScript) *
+.highlighted {
+    background-color: yellow;
+}
+
+/* Button styles *
+button {
+    font-size: 16px;
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e2e2e2;
+}
+
+#taskInput {
+    font-size: 16px;
+    padding: 8px;
+    margin: 5px;
+    width: calc(100% - 130px); /* Adjust width if needed *
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+*/
