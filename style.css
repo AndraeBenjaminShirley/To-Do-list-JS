@@ -1,107 +1,110 @@
-/* Basic Styling */
 body {
-    font-family: sans-serif;
-    margin: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* Task List Styling */
-#taskList {
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    margin-right: 5px;
+}
+
+ul {
     list-style: none;
     padding: 0;
 }
 
-/* Task Item Styling */
-.task {
-    font-size: 18px;
-    padding: 5px;
-    border-bottom: 1px solid #ccc;
-}
-
-/* Completed Task Styling */
-.completed {
-    text-decoration: line-through;
-    color: grey;
-} 
-
-/* Button Hover*/
-button:hover {
-    background-color: #e2e2e2;
-}
-
-/** Toggle Highlights*/
-.highlighted {
-    background-color: yellow; /* or any other color you'd like */
-}
-
-/* Task Item Styling *
-.task {
+li {
     padding: 10px;
-    margin-bottom: 5px;
-    border: 1px solid #ccc;
+    background: #f9f9f9;
+    margin-bottom: 10px;
     border-radius: 5px;
-    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Completed Task Styling *
-.completed {
+li.completed {
     text-decoration: line-through;
     color: #888;
 }
 
-/* Style for each task item *
-.task {
-    font-size: 18px;
+/* Add styles for new elements */
+input[type="date"] {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin-right: 10px;
 }
 
-/* Style for a completed task *
+input:focus, button:focus {
+    outline: 2px solid #ff4c4c;
+    outline-offset: 2px;
+}
+
+.task {
+    list-style: none;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .completed {
     text-decoration: line-through;
-    color: grey;
-    background-color: #f0f0f0;
+    color: gray;
 }
 
-/* Hover effect for each task *
-.task:hover {
-    background-color: #f9f9f9;
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff4c4c;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #d43d3d;
 }
 
-/* Highlighted task style (from JavaScript) *
 .highlighted {
     background-color: yellow;
+    border: 1px solid #ffeb3b;
 }
 
-/* Button styles *
-button {
-    font-size: 16px;
-    padding: 8px 12px;
-    margin: 5px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    background-color: #f2f2f2;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+.overdue {
+    background-color: #ffcccc;
 }
 
-button:hover {
-    background-color: #e2e2e2;
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    input, button {
+        width: 100%;
+        margin: 5px 0;
+    }
 }
-
-#taskInput {
-    font-size: 16px;
-    padding: 8px;
-    margin: 5px;
-    width: calc(100% - 130px); /* Adjust width if needed *
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#taskList {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-}
-*/
